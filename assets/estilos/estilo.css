@@ -91,3 +91,15 @@ footer{
         margin-right: 20px;
     }
 }
+@media screen and (min-width: 1000px){
+    body{
+        grid-template-columns:190px 1fr;
+    }
+    nav>div{
+        font-size: 20px;
+    }
+    section div p{
+        font-size: 15px;
+    }
+    
+}
