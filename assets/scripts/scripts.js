@@ -45,7 +45,7 @@ function fMostrarSecciones(){
 //  y cuando los tenga postrarlos en el section
     let html="";
     for(i=0;i<data.length;i++){
-        html += "<div>"+data[i].prod_seccion+"</div>";
+        html += "<div><p>" + data[i].prod_seccion + "</p></div>";
     }
 
     document.querySelector("section").innerHTML = html;

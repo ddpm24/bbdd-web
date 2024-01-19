@@ -1,19 +1,45 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     height: 100vh;
     display: grid;
-    grid-template-columns: 18% 1fr;
-    grid-template-rows: 50px 1fr 50px;
-    grid-template-areas: "zh  zh" "zn  zs"   "zf  zf";
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 1fr 50px;
+    grid-template-areas: "zh  zh" "zn  zn"  "zs  zs" "zf  zf";
 }
 header{
     grid-area: zh;
     background-color: rgb(47, 46, 46);
-    color: aliceblue;
+    color: rgb(240, 234, 80);
+    text-align: center;
+    padding-top: 5px;
+    text-shadow:1px 1px 1px rgb(220, 176, 30) 
 }
+
+nav{
+    grid-area: zn;
+    background-color: rgb(83, 79, 79);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav :hover{
+    color: white;
+    
+}
+nav div{
+    color: rgba(241, 236, 78, 0.821);
+    text-shadow:1px 1px 1px rgb(241, 187, 8);
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
 section{
     grid-area: zs;
     background-color: rgb(255, 255, 255);
@@ -21,6 +47,7 @@ section{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-evenly;
+
     
 }
 section div{
@@ -28,28 +55,20 @@ section div{
     justify-content: center;
     align-items: center;
     margin: 5px;
+    margin-top: 20px;
     background-color: black;
     color: antiquewhite;
-    width: 19%;
+    width: 29%;
     height: 70px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
-nav{
-    grid-area: zn;
-    background-color: rgb(83, 79, 79);
-}
-nav :hover{
-    color: white;
-    text-shadow:1px 1px 1px rgb(174, 167, 127) ;
-}
-nav div{
-    color: antiquewhite;
+section div p{
+    font-size: 12px;
     text-align: center;
-    margin-top: 10px;
-    font-size: 20px;
-    cursor: pointer;
+    margin: 15px;
 }
+
 footer{
     grid-area: zf;
     background-color: rgb(31, 30, 30);
@@ -67,7 +86,7 @@ footer{
         display: block;
     }
     nav>div{
-        padding: 10px;
+        padding:25px 10px;
         text-align: center;
         margin-right: 20px;
     }
