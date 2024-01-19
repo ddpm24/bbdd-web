@@ -32,17 +32,23 @@ section div{
     color: antiquewhite;
     width: 19%;
     height: 70px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 nav{
     grid-area: zn;
     background-color: rgb(83, 79, 79);
 }
+nav :hover{
+    color: white;
+    text-shadow:1px 1px 1px rgb(174, 167, 127) ;
+}
 nav div{
     color: antiquewhite;
     text-align: center;
     margin-top: 10px;
     font-size: 20px;
+    cursor: pointer;
 }
 footer{
     grid-area: zf;
